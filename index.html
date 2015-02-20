@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Asteroid!</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="./lib/asteroid.js"></script>
+	</head>
+	<body>
+		<canvas></canvas>
+		<script type="text/javascript">
+			var canvasEl = document.getElementsByTagName("canvas")[0];
+			canvasEl.height = window.innerHeight;
+			canvasEl.width = window.innerWidth;
+
+			game = new Asteroid.Game(canvasEl.getContext("2d"));
+			game.start()
+		</script>
+	</body>
+</html>
